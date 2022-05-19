@@ -10,31 +10,9 @@
 </head>
 
 <body>
-    <button class="btn">Нажми меня</button>
+    <button class="btn">Press Me</button>
     <div class="result"></div>
-    <script>
-        const btn = document.querySelector('.btn');
-        btn.addEventListener('click', () => {
-            console.log(random(getRandomInt(100)));
-        });
-
-        //функция для рандомного числа, на вход макс. знач.
-        function getRandomInt(max) {
-            return Math.floor(Math.random() * max) + 1;
-        };
-
-        function random(num) {
-            if (num % 15 == 0) {
-                return ("FizzBuzz");
-            } else if (num % 3 == 0) {
-                return ("Fizz");
-            } else if (num % 5 == 0) {
-                return ("Bozz");
-            } else {
-                return num;
-            };
-        };
-    </script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
